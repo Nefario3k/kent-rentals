@@ -21,7 +21,7 @@ export default defineNuxtConfig({
           property: "og:title",
           content: "Kent Rentals.ng | Your estate rental solution",
         },
-        { hid: "og:url", property: "og:url", content: "/" },
+        { hid: "og:url", property: "og:url", content: "https://kent-rentals.netlify.app/" },
         {
           hid: "og:description",
           property: "og:description",
@@ -31,7 +31,7 @@ export default defineNuxtConfig({
         {
           hid: "og:image",
           property: "og:image",
-          content: "/logo.png",
+          content: "https://kent-rentals.netlify.app/logo.png",
         },
 
         // twitter card
@@ -60,7 +60,7 @@ export default defineNuxtConfig({
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: "/logo.png",
+          content: "https://kent-rentals.netlify.app/logo.png",
         },
 
         { hid: "author", name: "author", content: "Kent Rentals.ng" },
@@ -73,40 +73,40 @@ export default defineNuxtConfig({
         { name: "format-detection", content: "telephone=no" },
       ],
       link: [
-        { rel: "manifest", href: "/site.webmanifest" },
+        { rel: "manifest", href: "https://kent-rentals.netlify.app/site.webmanifest" },
         {
           hid: "icon",
           rel: "icon",
           type: "image/png",
-          href: "/logo.png",
+          href: "https://kent-rentals.netlify.app/logo.png",
         },
         {
           rel: "icon",
           type: "image/x-icon",
-          href: "/favicon.ico",
+          href: "https://kent-rentals.netlify.app/favicon.ico",
         },
         {
           rel: "apple-touch-icon",
           sizes: "180x180",
-          href: "/apple-touch-icon.png",
+          href: "https://kent-rentals.netlify.app/apple-touch-icon.png",
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "32x32",
-          href: "/favicon-32x32.jpg",
+          href: "https://kent-rentals.netlify.app/favicon-32x32.jpg",
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "16x16",
-          href: "/favicon-16x16.png",
+          href: "https://kent-rentals.netlify.app/favicon-16x16.png",
         },
         {
           hid: "shortcut-icon",
           rel: "shortcut icon",
           type: "image/png",
-          href: "/logo.png",
+          href: "https://kent-rentals.netlify.app/logo.png",
         },
         {
           rel: "stylesheet",
