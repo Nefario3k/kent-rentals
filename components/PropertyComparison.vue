@@ -46,7 +46,10 @@
       <ComparisonRow label="Rating" :data="arr.map((el) => el.rating)" />
       <div>
         <h4 class="font-semibold mb-2 text-font-3">Amenities Comparison</h4>
-        <div :class="`grid grid-cols-${arr.length} gap-2`">
+        <div
+          :style="{ gridTemplateColumns: `repeat(${arr.length}, minmax(0, 1fr))` }"
+          class="grid gap-2"
+        >
           <div v-for="(items, index) in arr" :key="items.id + index + items.name + 21212">
             <h5 class="font-medium">{{ items.name }} Features</h5>
             <ul class="list-disc list-inside text-sm text-font-4">
