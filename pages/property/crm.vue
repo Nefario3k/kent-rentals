@@ -27,6 +27,36 @@
                       class="card__content__area form__section form__section2 form__section4"
                     >
                       <VRow>
+                        <!-- Property Name -->
+                        <VCol :cols="12" class="pb-0">
+                          <label
+                            for="ps-name"
+                            class="text-sm text-font-2 inline-block mb-[6px]"
+                          >
+                            Property Name <span class="text-main-4 font-Inter">*</span>
+                          </label>
+                          <input
+                            id="ps-name"
+                            type="text"
+                            placeholder="Enter Property Name"
+                            value="BeniRose 1"
+                          />
+                        </VCol>
+                        <!-- Application Status -->
+                        <VCol :cols="12" class="pb-0">
+                          <label
+                            for="app-status"
+                            class="text-sm text-font-2 inline-block mb-[6px]"
+                          >
+                            Application Status
+                            <span class="text-main-4 font-Inter">*</span>
+                          </label>
+                          <select id="app-status" value="Interested">
+                            <option selected disabled value="">Select Status</option>
+                            <option value="Interested">Interested</option>
+                            <option value="Not Interested">Not Interested</option>
+                          </select>
+                        </VCol>
                         <!-- First Name -->
                         <VCol :cols="12" class="pb-0">
                           <label
@@ -96,6 +126,17 @@
                       </VRow>
                     </section>
                   </div>
+                </div>
+                <div>
+                  <p class="text-sm text-dark-4 mb-3">
+                    Submission Date: {{ $formatDate(new Date()) }}
+                  </p>
+                  <p class="text-sm text-dark-4">
+                    Landlord Contact:
+                    <a href="href:+2347043901625" class="text-font-1 font-semibold"
+                      >+2347043901625</a
+                    >
+                  </p>
                 </div>
               </div>
             </VCol>
